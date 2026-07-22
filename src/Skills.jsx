@@ -1,7 +1,7 @@
 export default function Skills() {
   const tools = [
      "JavaScript", "TypeScript", "React", "React Native", "Expo", 
-    "Tailwind CSS", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS","Jitter", "Blender"
+    "Tailwind CSS", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS","Jitter", "Blender","Supabase"
   ];
 
   return (
@@ -45,7 +45,7 @@ export default function Skills() {
               <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-cyan-500/10 blur-3xl rounded-full group-hover:bg-cyan-500/20 transition-colors"></div>
               <h4 className="text-xl font-bold text-white relative z-10 mb-3 text-center">Always Learning</h4>
               <p className="text-slate-400 relative z-10 text-sm leading-relaxed text-center">
-                The tech landscape evolves rapidly. I spend my free time exploring new libraries, attending workshops, and building side projects to stay at the cutting edge.
+                The tech landscape evolves rapidly. I spend my free time exploring new libraries, and building side projects to stay at the cutting edge.
               </p>
             </div>
           </div>

@@ -7,28 +7,56 @@ const LinkedinIcon = (props) => <svg viewBox="0 0 24 24" fill="none" stroke="cur
 
 function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-8 py-6 lg:px-24 border-b border-slate-800/50 backdrop-blur-md sticky top-0 z-50">
-      <Link to="/" className="text-2xl font-bold tracking-tighter text-white">
-        NOAH  <span className="text-emerald-400">.</span>
+    <nav className="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/80 px-6 py-4 backdrop-blur-xl lg:px-24">
+  <div className="mx-auto flex max-w-7xl items-center justify-between">
+    <Link
+      to="/"
+      className="group flex w-28 items-center text-xl font-bold tracking-tight text-white"
+    >
+      <span className="relative flex h-9 w-9 items-center justify-center overflow-hidden rounded-xl border border-slate-700 bg-slate-900 text-sm text-emerald-400 transition-all duration-300 group-hover:w-16 group-hover:border-emerald-400/50">
+        <span className="absolute transition-opacity duration-300 group-hover:opacity-0">N</span>
+        <span className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100 text-emerald-400 font-medium tracking-wide">Noah.</span>
+      </span>
+    </Link>
+
+    <div className="hidden items-center gap-1 rounded-full border border-slate-800 bg-slate-900/70 p-1.5 md:flex">
+      <Link
+        to="/"
+        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
+      >
+        Home
       </Link>
-      <div className="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-        <Link to="/" className="hover:text-emerald-400 transition-colors">
-          Home
-        </Link>
-        <Link to="/about" className="hover:text-emerald-400 transition-colors">
-          About
-        </Link>
-        <Link to="/skills" className="hover:text-emerald-400 transition-colors">
-          Skills
-        </Link>
-        <Link to="/projects" className="hover:text-emerald-400 transition-colors">
-          Projects
-        </Link>
-        <Link to="/contact" className="hover:text-emerald-400 transition-colors">
-          Contact
-        </Link>
-      </div>
-    </nav>
+
+      <Link
+        to="/about"
+        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
+      >
+        About
+      </Link>
+
+      <Link
+        to="/skills"
+        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
+      >
+        Skills
+      </Link>
+
+      <Link
+        to="/projects"
+        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
+      >
+        Projects
+      </Link>
+    </div>
+
+    <Link
+      to="/contact"
+      className="rounded-xl border border-emerald-400/30 bg-emerald-400/10 px-5 py-2.5 text-sm font-semibold text-emerald-400 transition-all hover:border-emerald-400 hover:bg-emerald-400 hover:text-slate-950"
+    >
+      Let&apos;s Talk
+    </Link>
+  </div>
+</nav>
   );
 }
 
