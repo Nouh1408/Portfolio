@@ -1,11 +1,22 @@
 import { Mail } from "lucide-react";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 const GithubIcon = (props) => <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>;
 const LinkedinIcon = (props) => <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>;
 
 
 function Navbar() {
+  const location = useLocation();
+
+  const getLinkClass = (path) => {
+    const isActive = location.pathname === path;
+    return `rounded-full px-4 py-2 text-sm font-medium transition-all ${
+      isActive
+        ? "bg-slate-800 text-emerald-400 shadow-[0_0_10px_rgba(52,211,153,0.1)]"
+        : "text-slate-300 hover:bg-slate-800 hover:text-emerald-400"
+    }`;
+  };
+
   return (
     <nav className="sticky top-0 z-50 border-b border-slate-800/60 bg-slate-950/80 px-6 py-4 backdrop-blur-xl lg:px-24">
   <div className="mx-auto flex max-w-7xl items-center justify-between">
@@ -20,24 +31,15 @@ function Navbar() {
     </Link>
 
     <div className="hidden items-center gap-1 rounded-full border border-slate-800 bg-slate-900/70 p-1.5 md:flex">
-      <Link
-        to="/"
-        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
-      >
+      <Link to="/" className={getLinkClass("/")}>
         Home
       </Link>
 
-      <Link
-        to="/about"
-        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
-      >
+      <Link to="/about" className={getLinkClass("/about")}>
         About
       </Link>
 
-      <Link
-        to="/projects"
-        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
-      >
+      <Link to="/projects" className={getLinkClass("/projects")}>
         Projects
       </Link>
     </div>

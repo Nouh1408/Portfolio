@@ -76,5 +76,6 @@ export const projects = [
     description: "ITI Final Exam Project.",
     image: "",
     link: "#",
+    date:"March 2025 "
   },
 ];
