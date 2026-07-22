@@ -1,6 +1,8 @@
 import icpc from "../assets/images/icpc.png"
 import comp from "../assets/images/computer-network.png"
 import RN from "../assets/images/RN.png"
+import Sal7ly from "../assets/images/sal7ly.png"
+import ecomm from "../assets/images/e-comm.png"
 export const tools = [
   "JavaScript", "TypeScript", "React", "React Native", "Expo", 
   "Tailwind CSS", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Supabase", "Next JS",
@@ -43,5 +45,27 @@ export const certificates = [
 ];
 
 export const projects = [
-  // You can add your projects here later!
+  {
+    id: 1,
+    title: "Sal7ly",
+    description: "Sal7ly (صلحلي) is a comprehensive, two-sided Arabic-first mobile marketplace connecting Egyptian households with vetted local technicians for home-maintenance services (such as plumbing, carpentry, and electrical work).",
+    image: Sal7ly,
+    link: "https://nouh1408.github.io/SAl7LY-landing-page-main/",
+    date: "Sep 2025 - present",
+  },
+  {
+    id: 2,
+    title: "E-commerce",
+    description: "E-commerce Project developed during ITI internship.",
+    image: ecomm,
+    link: "https://nouh1408.github.io/E-commerce-React/",
+    date: "Oct 2024",
+  },
+  {
+    id: 3,
+    title: "Real Estate Landing Page",
+    description: "A modern real estate landing page with all the features of a modern real estate platform.",
+    image: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
+    link: "#",
+  },
 ];

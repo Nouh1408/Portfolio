@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 import { Link } from "react-router-dom";
 import Skills from "./Skills";
-import { certificates } from "./data/data";
+import { certificates, projects } from "./data/data";
 
 const tabs = ["Projects", "Certificates", "Tech Stack"];
 
@@ -89,7 +89,77 @@ export default function Home() {
         <div className="w-full max-w-6xl min-h-[400px]">
           {activeTab === "Projects" && (
             <div className="flex flex-col items-center justify-center h-full text-slate-500 animate-in fade-in zoom-in duration-300">
-              <p className="text-xl">Projects content will go here</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {projects.map((project) => (
+                  <div
+                    key={project.id}
+                    className="group relative rounded-3xl border border-slate-700/50 bg-slate-800/40 p-5 hover:bg-slate-800/80 hover:border-emerald-500/50 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(52,211,153,0.15)] overflow-hidden"
+                  >
+                    <div className="aspect-[4/3] w-full rounded-2xl bg-slate-900/80 mb-5 overflow-hidden relative border border-slate-700/50 group-hover:border-emerald-500/30 transition-colors">
+                      {project.image ? (
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-600 group-hover:text-emerald-500/60 transition-colors">
+                          <svg
+                            className="w-10 h-10 mb-2"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="1.5"
+                              d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l6 6v10a2 2 0 01-2 2z"
+                            />
+                          </svg>
+                          <span className="text-sm font-medium">
+                            Image Placeholder
+                          </span>
+                        </div>
+                      )}
+                    </div>
+
+                    <h3 className="text-xl font-bold text-white mb-1 group-hover:text-emerald-400 transition-colors">
+                      {project.title}
+                    </h3>
+                    <p className="text-slate-400 text-sm mb-4">
+                      {project.description}
+                    </p>
+
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-semibold px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                        {project.date}
+                      </span>
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm font-semibold text-slate-300 hover:text-white transition-colors flex items-center gap-1 group/btn"
+                      >
+                        View
+                        <svg
+                          className="w-4 h-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           )}
           {activeTab === "Certificates" && (
