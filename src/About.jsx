@@ -1,5 +1,5 @@
 import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
-import { Sparkles, ArrowRight } from "lucide-react";
+import { Sparkles, ArrowRight, Download, Briefcase, FileText } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function About() {
@@ -65,9 +65,18 @@ export default function About() {
           </p>
         </div>
         
-        <div className="flex gap-4 pt-4">
+        <div className="flex flex-wrap gap-4 pt-4">
           <Link to="/contact" className="inline-flex items-center justify-center px-6 py-3 font-semibold text-slate-900 bg-emerald-400 rounded-full hover:bg-emerald-300 transition-all hover:gap-3 hover:shadow-[0_0_20px_rgba(52,211,153,0.4)] group">
             Let's Talk <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Link>
+          <a href="/resume.pdf" download="resume.pdf" className="inline-flex items-center justify-center px-6 py-3 font-semibold text-emerald-400 border border-emerald-400/30 rounded-full bg-emerald-400/10 hover:bg-emerald-400 hover:text-slate-900 transition-all hover:shadow-[0_0_20px_rgba(52,211,153,0.2)] group">
+            <Download className="w-4 h-4 mr-2 group-hover:-translate-y-1 transition-transform" /> Download CV
+          </a>
+          <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-6 py-3 font-semibold text-slate-300 border border-slate-700 rounded-full bg-slate-800/50 hover:bg-slate-700 hover:text-white transition-all group">
+            <FileText className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" /> Resume
+          </a>
+          <Link to="/projects" className="inline-flex items-center justify-center px-6 py-3 font-semibold text-slate-300 border border-slate-700 rounded-full bg-slate-800/50 hover:bg-slate-700 hover:text-white transition-all group">
+            <Briefcase className="w-4 h-4 mr-2 group-hover:scale-110 transition-transform" /> View Projects
           </Link>
         </div>
       </div>

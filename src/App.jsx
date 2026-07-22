@@ -35,13 +35,6 @@ function Navbar() {
       </Link>
 
       <Link
-        to="/skills"
-        className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
-      >
-        Skills
-      </Link>
-
-      <Link
         to="/projects"
         className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition-all hover:bg-slate-800 hover:text-emerald-400"
       >
