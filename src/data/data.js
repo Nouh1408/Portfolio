@@ -3,6 +3,7 @@ import comp from "../assets/images/computer-network.png"
 import RN from "../assets/images/RN.png"
 import Sal7ly from "../assets/images/sal7ly.png"
 import ecomm from "../assets/images/e-comm.png"
+import route from "../assets/images/route.jpg"
 export const tools = [
   "JavaScript", "TypeScript", "React", "React Native", "Expo", 
   "Tailwind CSS", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Supabase", "Next JS",
@@ -41,7 +42,15 @@ export const certificates = [
     date: "Oct 2024",
     image: "",
     link: "#",
-  }
+  },
+  {
+    id: 5,
+    title: "Front-end Engineer Program",
+    issuer: "Route",
+    date: "March 2024 – Feb 2025",
+    image: route,
+    link: "#",
+  },
 ];
 
 export const projects = [
@@ -63,9 +72,9 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Real Estate Landing Page",
-    description: "A modern real estate landing page with all the features of a modern real estate platform.",
-    image: "https://www.udemy.com/course/the-complete-web-development-bootcamp/",
+    title: "ITI Final Exam Project",
+    description: "ITI Final Exam Project.",
+    image: "",
     link: "#",
   },
 ];
