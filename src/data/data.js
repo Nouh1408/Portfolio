@@ -1,7 +1,8 @@
 import icpc from "../assets/images/icpc.png"
 import comp from "../assets/images/computer-network.png"
 import RN from "../assets/images/RN.png"
-import Sal7ly from "../assets/images/sal7ly.png"
+
+import Sal7ly from "../assets/images/sal7ly_new.png"
 import ecomm from "../assets/images/e-comm.png"
 import route from "../assets/images/route.jpg"
 export const tools = [
@@ -61,6 +62,7 @@ export const projects = [
     image: Sal7ly,
     link: "https://nouh1408.github.io/SAl7LY-landing-page-main/",
     date: "Sep 2025 - present",
+    tools:["React Native","Expo", "Redux", "NativeWind", ""]
   },
   {
     id: 2,
@@ -72,10 +74,10 @@ export const projects = [
   },
   {
     id: 3,
-    title: "ITI Final Exam Project",
-    description: "ITI Final Exam Project.",
+    title: "GameLabrynth",
+    description: "An e-learning platform dedicated to mastering game development.",
     image: "",
     link: "#",
-    date:"March 2025 "
+    date:"Ongoing "
   },
 ];
