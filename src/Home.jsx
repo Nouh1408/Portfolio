@@ -53,11 +53,11 @@ export default function Home() {
         </div>
 
         {/* Rive Canvas */}
-        <div className="w-full h-[400px] lg:w-[600px] lg:h-[600px] mt-12 lg:mt-0">
-          <RiveComponent className="w-full h-full drop-shadow-2xl" />
+        <div className="w-full h-[400px] lg:w-[600px] lg:h-[600px] mt-12 lg:mt-0 ">
+          <RiveComponent className="w-full h-full drop-shadow-2xl rounded-f" />
         </div>
       </section>
-
+ 
       {/* Portfolio Showcase Section */}
       <section className="flex flex-col items-center px-8 py-24 lg:px-24 w-full">
         <h2 className="text-4xl lg:text-5xl font-extrabold text-white mb-4 tracking-tight">
