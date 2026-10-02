@@ -6,8 +6,8 @@ import Sal7ly from "../assets/images/sal7ly_new.png"
 import ecomm from "../assets/images/e-comm.png"
 import route from "../assets/images/route.jpg"
 export const tools = [
-  "JavaScript", "TypeScript", "React", "React Native", "Expo", 
-  "Tailwind CSS", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Supabase", "Next JS",
+  "HTML", "CSS", "JavaScript", "TypeScript", "React", "React Native", "Expo", 
+  "Tailwind CSS","NativeWind", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Next JS", "Express JS","MYSQL"
 ];
 
 
