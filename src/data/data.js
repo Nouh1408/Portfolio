@@ -1,10 +1,11 @@
 import icpc from "../assets/images/icpc.png"
 import comp from "../assets/images/computer-network.png"
 import RN from "../assets/images/RN.png"
-
+import CS from "../assets/images/image.png"
 import Sal7ly from "../assets/images/sal7ly_new.png"
 import ecomm from "../assets/images/e-comm.png"
 import route from "../assets/images/route.jpg"
+import ic from "../assets/images/image_copy.png"
 export const tools = [
   "HTML", "CSS", "JavaScript", "TypeScript", "React", "React Native", "Expo", 
   "Tailwind CSS","NativeWind", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Next JS", "Express JS","MYSQL"
@@ -61,7 +62,9 @@ export const certificates = [
     link: "#",
   },
 ];
-
+/**
+ * sal7ly->Sep 2025 - July 
+ */
 export const projects = [
   {
     id: 1,
@@ -69,7 +72,7 @@ export const projects = [
     description: "Sal7ly (صلحلي) is a comprehensive, two-sided Arabic-first mobile marketplace connecting Egyptian households with vetted local technicians for home-maintenance services (such as plumbing, carpentry, and electrical work).",
     image: Sal7ly,
     link: "https://nouh1408.github.io/SAl7LY-landing-page-main/",
-    date: "Sep 2025 - present",
+    date: "Sep 2025 - July 2026",
     tools:["React Native","Expo", "Redux", "NativeWind", ""]
   },
   {
@@ -84,8 +87,17 @@ export const projects = [
     id: 3,
     title: "GameLabrynth",
     description: "An e-learning platform dedicated to mastering game development.",
-    image: "",
+    image: ic,
     link: "#",
     date:"Ongoing "
   },
+  {
+    id:4,
+    title:"Car Service",
+    description:"The CarService is a single-page vehicle fleet and automotive maintenance management application built with React, TypeScript, and Vite, designed to pair with a Laravel API backend.",
+    image:CS,
+    link:"#",
+    date:"May 2026",
+  }
+
 ];
