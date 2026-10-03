@@ -6,6 +6,7 @@ import Sal7ly from "../assets/images/sal7ly_new.png"
 import ecomm from "../assets/images/e-comm.png"
 import route from "../assets/images/route.jpg"
 import ic from "../assets/images/image_copy.png"
+import chromeExtention from "../assets/images/BookMarker.png"
 export const tools = [
   "HTML", "CSS", "JavaScript", "TypeScript", "React", "React Native", "Expo", 
   "Tailwind CSS","NativeWind", "Bootstrap", "Redux", "Vite", "Figma", "Git", "MongoDB", "React JS", "Jitter", "Blender", "Next JS", "Express JS","MYSQL"
@@ -82,6 +83,7 @@ export const projects = [
     image: ecomm,
     link: "https://nouh1408.github.io/E-commerce-React/",
     date: "Oct 2024",
+    tools:["React","Bootstrap","Vite"]
   },
   {
     id: 3,
@@ -89,7 +91,8 @@ export const projects = [
     description: "An e-learning platform dedicated to mastering game development.",
     image: ic,
     link: "#",
-    date:"Ongoing "
+    date:"Ongoing ",
+    tools:["Next.JS"]
   },
   {
     id:4,
@@ -98,6 +101,19 @@ export const projects = [
     image:CS,
     link:"#",
     date:"May 2026",
+    tools:["React","Vite","Tailwind CSS"]
+  },
+  {
+    id:5,
+    title:"BookMarker Pro",
+    description:"From a simple Route assignment to a Chrome Extension. Features instant tab bookmarking, window session saving, cloud sync, and real-time tag search.",
+    image:chromeExtention,
+    link:"#",
+    date:"Nov 2026",
+    tools:["HTML","CSS","JavaScript"]
+  },
+  {
+    
   }
 
 ];
