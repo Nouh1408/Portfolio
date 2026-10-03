@@ -36,16 +36,16 @@ export default function Home() {
             APIs to create clean, user-friendly digital products.
           </p>
 
-          <div className="flex gap-4 pt-4">
+          <div className="flex flex-wrap items-center gap-4 pt-4">
             <Link
               to="/projects"
-              className="inline-flex items-center justify-center px-6 py-3 font-semibold text-slate-900 bg-emerald-400 rounded-full hover:bg-emerald-300 transition-colors shadow-[0_0_15px_rgba(52,211,153,0.4)]"
+              className="inline-flex items-center justify-center px-6 py-3 font-semibold text-slate-900 bg-emerald-400 border-2 border-emerald-400 rounded-full hover:bg-emerald-300 hover:border-emerald-300 transition-all text-center"
             >
               View Projects
             </Link>
             <button
               onClick={handleBump}
-              className="px-6 py-3 font-semibold text-emerald-400 border-2 border-emerald-400/30 rounded-full hover:bg-emerald-400/10 transition-all hover:scale-105 active:scale-95"
+              className="inline-flex items-center justify-center px-6 py-3 font-semibold text-emerald-400 border-2 border-emerald-400/30 rounded-full hover:bg-emerald-400/10 transition-all hover:scale-105 active:scale-95 text-center"
             >
               Rev the Engine!
             </button>
@@ -69,12 +69,12 @@ export default function Home() {
         </p>
 
         {/* Sub-navbar */}
-        <div className="flex bg-slate-900/60 p-1.5 rounded-full border border-slate-800/80 w-full max-w-3xl mb-16 relative backdrop-blur-sm">
+        <div className="flex bg-slate-900/60 p-1 sm:p-1.5 rounded-full border border-slate-800/80 w-full max-w-3xl mb-16 relative backdrop-blur-sm">
           {tabs.map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`flex-1 py-3 px-6 rounded-full text-sm font-semibold transition-all duration-300 ${
+              className={`flex-1 py-2 sm:py-3 px-2 sm:px-6 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 text-center ${
                 activeTab === tab
                   ? "bg-slate-800 text-white shadow-lg border border-slate-700"
                   : "text-slate-400 hover:text-slate-200 hover:bg-slate-800/40"
