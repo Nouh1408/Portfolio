@@ -9,7 +9,7 @@ import {
   MapPin,
   ExternalLink,
   Sparkles,
-  FileText
+  FileText,
 } from "lucide-react";
 
 export default function CvModal({ isOpen, onClose }) {
@@ -54,16 +54,19 @@ export default function CvModal({ isOpen, onClose }) {
               <FileText className="w-5 h-5" />
             </span>
             <div>
-              <h2 id="cv-modal-title" className="text-lg font-bold text-white tracking-tight">
+              <h2
+                id="cv-modal-title"
+                className="text-lg font-bold text-white tracking-tight"
+              >
                 Curriculum Vitae
               </h2>
-              <p className="text-xs text-slate-400">Ahmed Nouh &bull; CV view</p>
+              <p className="text-xs text-slate-400">
+                Ahmed Nouh &bull; CV view
+              </p>
             </div>
           </div>
 
           <div className="flex items-center gap-2 sm:gap-3">
-          
-
             <button
               onClick={onClose}
               type="button"
@@ -77,11 +80,10 @@ export default function CvModal({ isOpen, onClose }) {
 
         {/* Scrollable CV Document Body */}
         <div className="overflow-y-auto px-6 py-8 sm:px-10 sm:py-10 space-y-10 text-slate-300 selection:bg-emerald-500/30">
-          
           {/* Header & Personal Info */}
           <div className="relative rounded-2xl border border-slate-800/80 bg-gradient-to-br from-slate-900/90 via-slate-900/40 to-slate-950 p-6 sm:p-8">
             <div className="absolute top-0 right-0 w-48 h-48 bg-emerald-500/10 blur-3xl rounded-full pointer-events-none -z-0"></div>
-            
+
             <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
               <div>
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-medium mb-3">
@@ -95,7 +97,9 @@ export default function CvModal({ isOpen, onClose }) {
                   Front-End & Mobile Software Engineer
                 </p>
                 <p className="text-sm text-slate-400 mt-2 max-w-xl leading-relaxed">
-                 I build web and mobile apps using React, React Native, Expo, and JavaScript/TypeScript, with a focus on clean code, good performance, and a smooth user experience.
+                  I build web and mobile apps using React, React Native, Expo,
+                  and JavaScript/TypeScript, with a focus on clean code, good
+                  performance, and a smooth user experience.
                 </p>
               </div>
 
@@ -136,78 +140,7 @@ export default function CvModal({ isOpen, onClose }) {
             </div>
           </div>
 
-          {/* Technical Arsenal / Skills */}
-          <div>
-            <h3 className="flex items-center gap-3 text-xl font-bold text-white mb-4">
-              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
-                <Code2 className="w-4 h-4" />
-              </span>
-              Technical Arsenal
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
-                  Mobile Development
-                </h4>
-                <div className="flex flex-wrap gap-1.5">
-                  {["React Native", "Expo", "NativeWind", "Mobile UI/UX","Expo Router"].map((skill) => (
-                    <span key={skill} className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
-                  Front-End Web
-                </h4>
-                <div className="flex flex-wrap gap-1.5">
-                  {["React.js", "Next.js", "Tailwind CSS", "Bootstrap","Vite"].map((skill) => (
-                    <span key={skill} className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-<div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
-  <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
-    Back-End Web
-  </h4>
-
-  <div className="flex flex-wrap gap-1.5">
-    {[
-      "Express.js",
-      "MongoDB",
-      "REST APIs",
-      "MySQL",
-      "Sequelize",
-    ].map((skill) => (
-      <span
-        key={skill}
-        className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
-      >
-        {skill}
-      </span>
-    ))}
-  </div>
-</div>
-
-              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50 sm:col-span-2 md:col-span-1">
-                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
-                  Tools & Architecture
-                </h4>
-                <div className="flex flex-wrap gap-1.5">
-                  {["Redux", "Git & GitHub", "Vite", "REST APIs", "Figma", "Notion","Web3Forms"].map((skill) => (
-                    <span key={skill} className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200">
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Featured Projects & Practical Work */}
           <div>
@@ -230,13 +163,24 @@ export default function CvModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-400 mb-3 leading-relaxed">
-                  Engineered an Arabic-first mobile marketplace connecting Egyptian households with vetted local
-                  technicians for plumbing, carpentry, and electrical services. Implemented real-time booking flows,
-                  status tracking, and intuitive user interfaces.
+                  Engineered an Arabic-first mobile marketplace connecting
+                  Egyptian households with vetted local technicians for
+                  plumbing, carpentry, and electrical services. Implemented
+                  real-time booking flows, status tracking, and intuitive user
+                  interfaces.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["React Native", "Expo", "Redux", "NativeWind", "REST API"].map((badge) => (
-                    <span key={badge} className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">
+                  {[
+                    "React Native",
+                    "Expo",
+                    "Redux",
+                    "NativeWind",
+                    "REST API",
+                  ].map((badge) => (
+                    <span
+                      key={badge}
+                      className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                    >
                       {badge}
                     </span>
                   ))}
@@ -254,12 +198,23 @@ export default function CvModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-400 mb-3 leading-relaxed">
-                  Developed an interactive online shopping platform during the ITI internship featuring product catalog,
-                  instant search & filter, cart state persistence, authentication, and a checkout experience.
+                  Developed an interactive online shopping platform during the
+                  ITI internship featuring product catalog, instant search &
+                  filter, cart state persistence, authentication, and a checkout
+                  experience.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["React.js", "Redux", "Tailwind CSS", "REST APIs", "Vite"].map((badge) => (
-                    <span key={badge} className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">
+                  {[
+                    "React.js",
+                    "Redux",
+                    "Tailwind CSS",
+                    "REST APIs",
+                    "Vite",
+                  ].map((badge) => (
+                    <span
+                      key={badge}
+                      className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                    >
                       {badge}
                     </span>
                   ))}
@@ -277,13 +232,121 @@ export default function CvModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-400 mb-3 leading-relaxed">
-                  Building a specialized learning platform dedicated to mastering modern game development, interactive
-                  curriculum paths, and structured resource sharing.
+                  Building a specialized learning platform dedicated to
+                  mastering modern game development, interactive curriculum
+                  paths, and structured resource sharing.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Tailwind CSS", "JavaScript", "UI/UX"].map((badge) => (
-                    <span key={badge} className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700">
-                      {badge}
+                  {["React", "Tailwind CSS", "JavaScript", "UI/UX"].map(
+                    (badge) => (
+                      <span
+                        key={badge}
+                        className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                      >
+                        {badge}
+                      </span>
+                    ),
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Technical Arsenal / Skills */}
+          <div>
+            <h3 className="flex items-center gap-3 text-xl font-bold text-white mb-4">
+              <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
+                <Code2 className="w-4 h-4" />
+              </span>
+              Technical Arsenal
+            </h3>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
+                  Mobile Development
+                </h4>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "React Native",
+                    "Expo",
+                    "NativeWind",
+                    "Mobile UI/UX",
+                    "Expo Router",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
+                  Front-End Web
+                </h4>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "React.js",
+                    "Next.js",
+                    "Tailwind CSS",
+                    "Bootstrap",
+                    "Vite",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
+                  Back-End Web
+                </h4>
+
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "Express.js",
+                    "MongoDB",
+                    "REST APIs",
+                    "MySQL",
+                    "Sequelize",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/50 sm:col-span-2 md:col-span-1">
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-emerald-400 mb-2">
+                  Tools & Architecture
+                </h4>
+                <div className="flex flex-wrap gap-1.5">
+                  {[
+                    "Redux",
+                    "Git & GitHub",
+                    "Vite",
+                    "REST APIs",
+                    "Figma",
+                    "Notion",
+                    "Web3Forms",
+                  ].map((skill) => (
+                    <span
+                      key={skill}
+                      className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
+                    >
+                      {skill}
                     </span>
                   ))}
                 </div>
@@ -302,20 +365,35 @@ export default function CvModal({ isOpen, onClose }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40">
-                <h4 className="font-bold text-white">Front-End Engineer Program</h4>
-                <p className="text-sm text-emerald-400 font-medium">Route Academy</p>
-                <p className="text-xs text-slate-400 mt-1">March 2024 – Feb 2025</p>
+                <h4 className="font-bold text-white">
+                  Front-End Engineer Program
+                </h4>
+                <p className="text-sm text-emerald-400 font-medium">
+                  Route Academy
+                </p>
+                <p className="text-xs text-slate-400 mt-1">
+                  March 2024 – Feb 2025
+                </p>
                 <p className="text-xs text-slate-400 mt-2">
-                  Intensive track covering modern JavaScript, React ecosystem, web performance, component architecture, and production practices.
+                  Intensive track covering modern JavaScript, React ecosystem,
+                  web performance, component architecture, and production
+                  practices.
                 </p>
               </div>
 
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40">
-                <h4 className="font-bold text-white">React JS Summer Internship</h4>
-                <p className="text-sm text-emerald-400 font-medium">Information Technology Institute (ITI)</p>
-                <p className="text-xs text-slate-400 mt-1">Summer 2024 &bull; Completed Oct 2024</p>
+                <h4 className="font-bold text-white">
+                  React JS Summer Internship
+                </h4>
+                <p className="text-sm text-emerald-400 font-medium">
+                  Information Technology Institute (ITI)
+                </p>
+                <p className="text-xs text-slate-400 mt-1">
+                  Summer 2024 &bull; Completed Oct 2024
+                </p>
                 <p className="text-xs text-slate-400 mt-2">
-                  Hands-on industry training on building scalable single-page applications, state management, and real-world workflows.
+                  Hands-on industry training on building scalable single-page
+                  applications, state management, and real-world workflows.
                 </p>
               </div>
             </div>
@@ -333,20 +411,36 @@ export default function CvModal({ isOpen, onClose }) {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
               <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/30">
                 <span className="text-xs text-amber-400 font-medium">ICPC</span>
-                <h5 className="font-semibold text-white text-sm mt-0.5">ECPC 2023 Participant</h5>
-                <p className="text-xs text-slate-500 mt-1">Aug 2023 &bull; Problem Solving & Algorithms</p>
+                <h5 className="font-semibold text-white text-sm mt-0.5">
+                  ECPC 2023 Participant
+                </h5>
+                <p className="text-xs text-slate-500 mt-1">
+                  Aug 2023 &bull; Problem Solving & Algorithms
+                </p>
               </div>
 
               <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/30">
-                <span className="text-xs text-amber-400 font-medium">Udemy</span>
-                <h5 className="font-semibold text-white text-sm mt-0.5">React Native - The Practical Guide</h5>
-                <p className="text-xs text-slate-500 mt-1">2026 &bull; Cross-Platform Mobile Apps</p>
+                <span className="text-xs text-amber-400 font-medium">
+                  Udemy
+                </span>
+                <h5 className="font-semibold text-white text-sm mt-0.5">
+                  React Native - The Practical Guide
+                </h5>
+                <p className="text-xs text-slate-500 mt-1">
+                  2026 &bull; Cross-Platform Mobile Apps
+                </p>
               </div>
 
               <div className="p-4 rounded-xl border border-slate-800 bg-slate-900/30">
-                <span className="text-xs text-amber-400 font-medium">Huawei ICT Academy</span>
-                <h5 className="font-semibold text-white text-sm mt-0.5">Computer Network</h5>
-                <p className="text-xs text-slate-500 mt-1">Dec 2024 &bull; Networking Fundamentals</p>
+                <span className="text-xs text-amber-400 font-medium">
+                  Huawei ICT Academy
+                </span>
+                <h5 className="font-semibold text-white text-sm mt-0.5">
+                  Computer Network
+                </h5>
+                <p className="text-xs text-slate-500 mt-1">
+                  Dec 2024 &bull; Networking Fundamentals
+                </p>
               </div>
             </div>
           </div>
