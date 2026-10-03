@@ -173,7 +173,7 @@ function Navbar() {
             <a
               target="_blank"
               rel="noreferrer"
-              href="mailto:contact@example.com"
+              href={`mailto:${import.meta.env.VITE_EMAIL_ADDRESS || "ahmedinouh@gmail.com"}`}
               className="p-1.5 hover:text-emerald-400 transition-colors"
               aria-label="Email"
             >
@@ -199,7 +199,12 @@ function Footer() {
         <a className="cursor-pointer" target="blank" href="https://www.linkedin.com/in/ahmed-nouh-91882a286/" >
           <LinkedinIcon className="w-5 h-5" />
         </a>
-        <a className="cursor-pointer" target="blank" href="mailto:[EMAIL_ADDRESS]" >
+        <a
+          className="cursor-pointer"
+          target="_blank"
+          rel="noreferrer"
+          href={`mailto:${import.meta.env.VITE_EMAIL_ADDRESS || "ahmedinouh@gmail.com"}`}
+        >
           <Mail className="w-5 h-5" />
         </a>
       </div>
