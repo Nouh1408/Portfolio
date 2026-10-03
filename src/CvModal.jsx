@@ -140,8 +140,6 @@ export default function CvModal({ isOpen, onClose }) {
             </div>
           </div>
 
-          
-
           {/* Featured Projects & Practical Work */}
           <div>
             <h3 className="flex items-center gap-3 text-xl font-bold text-white mb-4">
@@ -176,6 +174,7 @@ export default function CvModal({ isOpen, onClose }) {
                     "Redux",
                     "NativeWind",
                     "REST API",
+                    "Expo Router",
                   ].map((badge) => (
                     <span
                       key={badge}
@@ -198,26 +197,22 @@ export default function CvModal({ isOpen, onClose }) {
                   </span>
                 </div>
                 <p className="text-sm text-slate-400 mb-3 leading-relaxed">
-                  Developed an interactive online shopping platform during the
-                  ITI internship featuring product catalog, instant search &
-                  filter, cart state persistence, authentication, and a checkout
+                  Developed an online shopping platform during the ITI
+                  internship featuring product catalog, instant search & filter,
+                  cart state persistence, authentication, and a mock checkout
                   experience.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {[
-                    "React.js",
-                    "Redux",
-                    "Tailwind CSS",
-                    "REST APIs",
-                    "Vite",
-                  ].map((badge) => (
-                    <span
-                      key={badge}
-                      className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
-                    >
-                      {badge}
-                    </span>
-                  ))}
+                  {["React.js", "Redux", "Bootstrap", "REST APIs", "Vite"].map(
+                    (badge) => (
+                      <span
+                        key={badge}
+                        className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                      >
+                        {badge}
+                      </span>
+                    ),
+                  )}
                 </div>
               </div>
 
@@ -233,11 +228,11 @@ export default function CvModal({ isOpen, onClose }) {
                 </div>
                 <p className="text-sm text-slate-400 mb-3 leading-relaxed">
                   Building a specialized learning platform dedicated to
-                  mastering modern game development, interactive curriculum
+                  mastering learn game development, interactive curriculum
                   paths, and structured resource sharing.
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  {["React", "Tailwind CSS", "JavaScript", "UI/UX"].map(
+                  {["Next.js", "TypeScript", "Tailwind CSS", "UI/UX"].map(
                     (badge) => (
                       <span
                         key={badge}
@@ -360,13 +355,65 @@ export default function CvModal({ isOpen, onClose }) {
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-emerald-400">
                 <GraduationCap className="w-4 h-4" />
               </span>
-              Education & Programs
+              Education & Academic Credentials
             </h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* University Degree */}
+              <div className="p-5 rounded-2xl border border-emerald-500/30 bg-slate-900/60 sm:col-span-2 shadow-[0_0_20px_rgba(52,211,153,0.06)]">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
+                  <div>
+                    <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold mb-1">
+                      Bachelor&apos;s Degree
+                    </div>
+                    <h4 className="text-lg font-bold text-white">
+                      B.Sc. Software Engineering
+                    </h4>
+                    <p className="text-sm text-emerald-400 font-medium">
+                      New Mansoura University &bull; Mansoura, Egypt
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap sm:flex-col sm:items-end gap-1.5">
+                    <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 border border-slate-700">
+                      Graduating 2026
+                    </span>
+                    <span className="text-xs font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full">
+                      CGPA: 3.3
+                    </span>
+                  </div>
+                </div>
+
+                <p className="text-xs text-slate-300 mt-2">
+                  Faculty of Computer Science and Engineering – Software
+                  Engineering Division.
+                </p>
+
+                <div className="mt-3 pt-3 border-t border-slate-800/80">
+                  <span className="text-xs font-semibold text-slate-400 block mb-2">
+                    Key Coursework:
+                  </span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {[
+                      "Data Structures & Algorithms",
+                      "Database Management",
+                      "Web Development",
+                      "API Design",
+                      "Software Engineering",
+                    ].map((course) => (
+                      <span
+                        key={course}
+                        className="px-2.5 py-1 text-xs rounded-lg bg-slate-800/80 border border-slate-700/60 text-slate-200"
+                      >
+                        {course}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40">
                 <h4 className="font-bold text-white">
-                  Front-End Engineer Program
+                  Full Stack Engineer Program
                 </h4>
                 <p className="text-sm text-emerald-400 font-medium">
                   Route Academy

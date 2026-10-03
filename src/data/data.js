@@ -46,10 +46,18 @@ export const certificates = [
   },
   {
     id: 5,
-    title: "Front-end Engineer Program",
+    title: "Full Stack Engineer Program",
     issuer: "Route",
     date: "March 2024 – Feb 2025",
     image: route,
+    link: "#",
+  },
+  {
+    id: 6,
+    title: "B.Sc. Software Engineering",
+    issuer: "New Mansoura University",
+    date: "Graduating 2026 (CGPA: 3.3)",
+    image: "",
     link: "#",
   },
 ];
