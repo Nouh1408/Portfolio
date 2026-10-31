@@ -99,7 +99,7 @@ export const projects = [
     title:"Car Service",
     description:"The CarService is a single-page vehicle fleet and automotive maintenance management application built with React, TypeScript, and Vite, designed to pair with a Laravel API backend.",
     image:CS,
-    link:"#",
+    link:"https://github.com/Ahmed-hagag8/car_service",
     date:"May 2026",
     tools:["React","Vite","Tailwind CSS"]
   },
@@ -112,8 +112,23 @@ export const projects = [
     date:"Nov 2026",
     tools:["HTML","CSS","JavaScript"]
   },
-  {
-    
-  }
+    {
+  id: 6,
+  title: "Campus Lost & Found — Mobile Recovery Platform",
+  description: "A centralized, cross-platform mobile recovery application for university members featuring real-time peer-to-peer chat, an algorithmic confidence-matching engine for lost & found reports, and ownership verification challenge flows.",
+  image: "/projects/campus-lost-found.png", // or require('@/assets/images/lost.png') / your project screenshot
+  link: "https://github.com/Nouh1408/Moobile_Project", // replace with your repo or live demo URL
+  date: "October 2026",
+  tools: [
+    "React Native",
+    "Expo SDK 58",
+    "TypeScript",
+    "NativeWind",
+    "Tailwind CSS",
+    "Supabase",
+    "PostgreSQL",
+    "WebSockets (Realtime)"
+  ]
+}
 
 ];

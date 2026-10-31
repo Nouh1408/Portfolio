@@ -153,9 +153,21 @@ export default function CvModal({ isOpen, onClose }) {
               {/* Project 1 */}
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700/80 transition-all">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                  <h4 className="text-lg font-bold text-white">
-                    Sal7ly (صلحلي) &bull; Two-Sided Home Maintenance Marketplace
-                  </h4>
+                  <div className="flex items-center gap-2">
+                    <h4 className="text-lg font-bold text-white">
+                      Sal7ly (صلحلي) &bull; Two-Sided Home Maintenance Marketplace
+                    </h4>
+                    <a
+                      href="https://nouh1408.github.io/SAl7LY-landing-page-main/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-400 hover:text-emerald-400 transition-colors"
+                      title="View Live Demo"
+                      aria-label="Sal7ly Live Demo"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
                   <span className="text-xs font-medium text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full w-fit">
                     Sep 2025 – Present
                   </span>
@@ -186,12 +198,72 @@ export default function CvModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* Project 2 */}
+              {/* Project 2 - Campus Lost & Found */}
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700/80 transition-all">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
-                  <h4 className="text-lg font-bold text-white">
-                    E-Commerce Web Application
-                  </h4>
+                  <div className="flex items-center gap-2">
+                    <h4 className="text-lg font-bold text-white">
+                      Campus Lost &amp; Found &bull; Mobile Recovery Platform
+                    </h4>
+                    <a
+                      href="https://github.com/Nouh1408/Moobile_Project"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-400 hover:text-emerald-400 transition-colors"
+                      title="View GitHub Repository"
+                      aria-label="Campus Lost & Found GitHub Repository"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
+                  <span className="text-xs font-medium text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-full w-fit">
+                    Oct 2026
+                  </span>
+                </div>
+                <p className="text-sm text-slate-400 mb-3 leading-relaxed">
+                  Architected a centralized, cross-platform mobile recovery application for
+                  university members featuring real-time peer-to-peer chat, an
+                  algorithmic confidence-matching engine for lost &amp; found reports,
+                  and ownership verification challenge flows.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "React Native",
+                    "Expo SDK 58",
+                    "TypeScript",
+                    "NativeWind",
+                    "Supabase",
+                    "PostgreSQL",
+                    "WebSockets",
+                  ].map((badge) => (
+                    <span
+                      key={badge}
+                      className="px-2 py-0.5 text-xs rounded-md bg-slate-800 text-slate-300 border border-slate-700"
+                    >
+                      {badge}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Project 3 */}
+              <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700/80 transition-all">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
+                  <div className="flex items-center gap-2">
+                    <h4 className="text-lg font-bold text-white">
+                      E-Commerce Web Application
+                    </h4>
+                    <a
+                      href="https://nouh1408.github.io/E-commerce-React/"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-slate-400 hover:text-emerald-400 transition-colors"
+                      title="View Live Demo"
+                      aria-label="E-Commerce Live Demo"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </div>
                   <span className="text-xs font-medium text-slate-400 bg-slate-800/80 border border-slate-700 px-2.5 py-0.5 rounded-full w-fit">
                     Oct 2024
                   </span>
@@ -216,7 +288,7 @@ export default function CvModal({ isOpen, onClose }) {
                 </div>
               </div>
 
-              {/* Project 3 */}
+              {/* Project 4 */}
               <div className="p-5 rounded-2xl border border-slate-800 bg-slate-900/40 hover:border-slate-700/80 transition-all">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-2">
                   <h4 className="text-lg font-bold text-white">
@@ -287,6 +359,7 @@ export default function CvModal({ isOpen, onClose }) {
                   {[
                     "React.js",
                     "Next.js",
+                    "TypeScript",
                     "Tailwind CSS",
                     "Bootstrap",
                     "Vite",
@@ -308,10 +381,11 @@ export default function CvModal({ isOpen, onClose }) {
                 <div className="flex flex-wrap gap-1.5">
                   {[
                     "Express.js",
+                    "Supabase",
+                    "PostgreSQL",
                     "MongoDB",
                     "REST APIs",
                     "MySQL",
-                    "Sequelize",
                   ].map((skill) => (
                     <span
                       key={skill}
